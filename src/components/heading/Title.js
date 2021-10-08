@@ -11,7 +11,7 @@ export function TEXT({ title }) {
 }
 export function H1({ title }) {
 	return (
-		<div className='pb-12 md:pb-16'>
+		<div className='pb-12 md:pb-16 '>
 			<h2 className='font-black text-gray-800 text-2xl md:text-4xl uppercase text-center'>
 				{title}
 			</h2>
@@ -21,7 +21,7 @@ export function H1({ title }) {
 }
 export function H2({ title }) {
 	return (
-		<div className='pb-10 md:pb-12'>
+		<div className='pb-10 md:pb-12 lg:pb-16'>
 			<h2 className='font-black text-gray-800 text-2xl md:text-4xl uppercase text-center'>
 				{title}
 			</h2>

@@ -4,7 +4,7 @@ import ReactPlayer from "react-player/youtube";
 
 function CardVideo({title, date}) {
   return (
-		<div className='max-w-md mx-auto'>
+		<div className='max-w-md  mx-auto'>
 			<div className='bg-white shadow-md border border-gray-200 mb-5'>
 				<div className=''>
 					<ReactPlayer

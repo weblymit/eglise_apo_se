@@ -28,7 +28,7 @@ export const info = {
 		],
 		socilaMedia: [
 			{
-				href: "https://www.facebook.com/",
+				href: "https://www.facebook.com/eastetienne",
 				component: <FaFacebook className='text-3xl opacity-60 ' />,
 			},
 			{
@@ -36,7 +36,7 @@ export const info = {
 				component: <FaInstagram className='mx-4 text-3xl opacity-60' />,
 			},
 			{
-				href: "https://www.youtube.com",
+				href: "https://www.youtube.com/channel/UCMZphfCbVQEV-qz6VPe-aYQ",
 				component: <FaYoutube className='text-3xl opacity-60' />,
 			},
 		],

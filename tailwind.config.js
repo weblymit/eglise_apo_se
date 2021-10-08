@@ -33,8 +33,8 @@ module.exports = {
 				"5xl": "2.5rem",
 				"6xl": "2.75rem",
 				"7xl": "3rem",
-				"8xl": "3.5rem",
-				"9xl": "4rem",
+				"8xl": "4.5rem",
+				"9xl": "5.25rem",
 				"10xl": "6.25rem",
 			},
 			boxShadow: {

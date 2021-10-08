@@ -2,10 +2,10 @@ import React from "react";
 
 function SectionVerset() {
 	return (
-		<div className='container'>
-			<p className='text-center text-2xl  border-2 border-gray-300 p-4 text-gray-700 rounded-lg'>
+		<div className='container lg:max-w-3xl leading-relaxed shadow-xl'>
+			<p className='text-center text-2xl lg:text-4xl p-4 lg:py-20 lg:px-4 font-semibolde text-gray-700 '>
 				"Paul et Silas répondirent:{" "}
-				<span className='font-extrabold'>Crois au Seigneur Jésus</span>, et tu
+				<span className='font-black text-green-500'>Crois au Seigneur Jésus</span>, et tu
 				seras sauvé, toi et ta famille"
 			</p>
 		</div>

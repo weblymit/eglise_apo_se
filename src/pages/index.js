@@ -11,17 +11,17 @@ const IndexPage = () => {
 	return (
 		<Layout>
 			<HeaderHomePage />
-			<div className='py-10 container'>
+			<div className='py-10 container lg:px-2'>
 				<SectionEvent />
 			</div>
 			<div className='container'>
 				<SectionVideo />
       </div>
-      <div className="">
+      <div className="bg-gray-100">
         <SectionGroupe />
       </div>
-      <div className="bg-gray-100 py-16">
-        <div className="h-1 w-20 mx-auto mb-8 bg-gray-600"/>
+      <div className=" py-16 lg:py-36">
+        <div className="h-1 w-20 lg:w-40 mx-auto mb-8 bg-green-500"/>
         <SectionVerset />
       </div>
 		</Layout>
