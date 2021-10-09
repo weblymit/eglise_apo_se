@@ -7,20 +7,18 @@ const Navbar = () => {
 	const infoSite = info.siteMetadata;
 	const menuLink = infoSite.menuLinks;
 
-  return (
+	return (
 		<nav className={`py-5 container text-green-50s`}>
 			<div className=''>
-				<ul className='flex items-center justify-between text-green-500 '>
+				<ul className='flex items-center justify-between text-gray-200 '>
 					<li>
 						<Link to='/'>
-							<a className=''>
-								<p className='text-4xl font-black pt-6'>EASE</p>
-								{/* <img
+							<p className='text-4xl font-black pt-6'>EASE</p>
+							{/* <img
 									src={infoSite.logo}
 									className='w-24'
 									alt={infoSite.logoAlt}
 								/> */}
-							</a>
 						</Link>
 					</li>
 					<ul className='hidden lg:flex items-center justify-between space-x-4 text-lgl uppercase font-bol'>

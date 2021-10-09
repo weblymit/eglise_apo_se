@@ -6,7 +6,6 @@ import SectionVerset from "../components/homePage/SectionVerset";
 import SectionVideo from "../components/homePage/SectionVideo";
 import Layout from "../components/layout/Layout";
 
-// styles
 const IndexPage = () => {
 	return (
 		<Layout>

@@ -25,7 +25,8 @@ function Hamburger({ links }) {
 				<div className='h-screen bg-gray-700'>
 					<p
 						onClick={toggleDrawer(false)}
-						className='text-4xl font-black text-gray-100 text-right pr-8 pt-5'
+						className='text-4xl font-black text-gray-100 text-right pr-8 pt-5 '
+						role="button"
 					>
 						x
 					</p>
@@ -34,7 +35,7 @@ function Hamburger({ links }) {
 							<li
 								key={label}
 								className={`py-2 ${
-									style == "style"
+									style === "style"
 										? "bg-pink-600 rounded-lg text-gray-100 mx-12"
 										: ""
 								}`}

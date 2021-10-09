@@ -14,11 +14,11 @@ export const info = {
 		menuLinks: [
 			{
 				label: "Accueil",
-				href: "/about",
+				href: "/",
 			},
 			{
 				label: "à propos",
-				href: "/about",
+				href: "/a-propos-de-nous",
 			},
 
 			{
