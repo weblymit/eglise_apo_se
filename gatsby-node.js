@@ -60,7 +60,6 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
 		});
 	});
 	data.videos.nodes.forEach((video) => {
-		console.log("video:", video);
 		createPage({
 			component: path.resolve(`src/templates/video.js`),
 			context: {
