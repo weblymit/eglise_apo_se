@@ -8,9 +8,9 @@ const Navbar = () => {
 	const menuLink = infoSite.menuLinks;
 
 	return (
-		<nav className={`py-5 container lg:px-2`}>
+		<nav className={`py-5 container`}>
 			<div className=''>
-				<ul className='flex items-center justify-between text-gray-200 md:pt-8'>
+				<ul className='flex items-center justify-between text-gray-200 md:pt-5'>
 					<li>
 						<Link to='/'>
 							<p className='text-3xl lg:text-5xl font-black pt-6z'>EASE</p>

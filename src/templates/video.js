@@ -21,7 +21,7 @@ function Video(props) {
 				keywords='"Serge Plais", "Eglise Saint Etienne", "Eglise evangélique Saint Etienne"'
 			/>
 			<Header title={title} />
-			<div className='container py-10 lg:py-20 lg:px-2 lg:max-w-5xl'>
+			<div className='container py-10 lg:py-20 lg:max-w-5xl'>
 				<BackButon urlBack="/videos" />
 				<div className=' '>
 					<div className='text-center pt-3 pb-6 lg:pt-14 lg:pb-20'>

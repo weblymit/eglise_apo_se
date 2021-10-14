@@ -20,6 +20,10 @@ export const info = {
 				label: "à propos",
 				href: "/a-propos-de-nous",
 			},
+			{
+				label: "L'équipe",
+				href: "/equipe",
+			},
 
 			{
 				label: "Contact",

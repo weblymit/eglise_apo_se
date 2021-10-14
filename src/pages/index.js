@@ -18,10 +18,10 @@ const IndexPage = ({ data }) => {
 				keywords='"Serge Plais", "Eglise Saint Etienne", "Eglise evangélique Saint Etienne"'
 			/>
 			<HeaderHomePage />
-			<div className='py-10 container lg:px-2 lg:mt-20'>
+			<div className='py-10 container lg:mt-20'>
 				<SectionEvent events={events} />
 			</div>
-			<div className='container lg:px-2'>
+			<div className='container'>
 				<SectionVideo videos={videos} />
 			</div>
 			<div className='bg-gray-200'>

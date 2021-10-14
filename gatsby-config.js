@@ -17,7 +17,10 @@ module.exports = {
 				label: "à propos",
 				href: "/qui-sommes-nous",
 			},
-
+			{
+				label: "l'équipe",
+				href: "/equipe",
+			},
 			{
 				label: "Contact",
 				href: "/contact",

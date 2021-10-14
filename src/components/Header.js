@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./navigation/Navbar";
 
-const Hedaer = ({ title }) => {
+const Header = ({ title }) => {
 	let img =
 		"https://images.unsplash.com/flagged/photo-1552997030-b4ba6de91b06?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80";
 	const style = {
@@ -29,4 +29,4 @@ const Hedaer = ({ title }) => {
 	);
 };
 
-export default Hedaer;
+export default Header;

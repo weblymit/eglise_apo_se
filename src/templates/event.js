@@ -18,7 +18,7 @@ function Event(props) {
 				keywords='"Serge Plais", "Eglise Saint Etienne", "Eglise evangélique Saint Etienne"'
 			/>
 			<Header title={title} />
-			<div className='container py-10 lg:py-28 lg:px-2 lg:max-w-5xl'>
+			<div className='container py-10 lg:py-28 lg:max-w-5xl'>
 				<div className='pb-4 lg:pb-8'>
 					<BackButon urlBack='/events' />
 				</div>
