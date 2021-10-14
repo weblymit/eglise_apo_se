@@ -6,7 +6,7 @@ const Pager = ({ pageContext }) => {
 	return (
 		<div
 			id='pager'
-			className='flex justify-center rounded-md -space-x-px mx-auto mt-8'
+			className='flex justify-center rounded-md -space-x-px mx-auto mt-8 lg:mt-16'
 		>
 			{previousPagePath && (
 				<Link

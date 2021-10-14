@@ -2,11 +2,12 @@ require("dotenv").config();
 
 module.exports = {
 	siteMetadata: {
-		siteUrl: "https://www.yourdomain.tld",
+		siteUrl: "https://egliseapostoliquesaintetienne.fr/",
 		title: "Eglise apostolique de Saint Etienne",
 		description:
-			"Gatsby blog starter for GraphCMS! Powered by `gatsby-source-graphcms`, featuring `gatsby-image` and MDX!",
-		keywords: "Headless CMS, GraphCMS, GraphQL CMS, Gatsby",
+			"Bienvenue à l'église apostolique de Saint-Etienne. nous vous accueillons tous les dimanches",
+		author: "weblymit",
+		image: "/images/ease.jpeg",
 		menuLinks: [
 			{
 				label: "Accueil",

@@ -3,6 +3,7 @@ import Layout from "../components/layout/Layout";
 import Header from "../components/Header";
 import Date from "../components/date";
 import BackButon from "../components/BackButon";
+import SEO from "../components/SEO";
 
 function Event(props) {
 	const title = props.pageContext.event.titreEvenement;
@@ -11,10 +12,15 @@ function Event(props) {
 	const heure = props.pageContext.event.heure;
 	return (
 		<Layout>
+			<SEO
+				title={title}
+				description={description}
+				keywords='"Serge Plais", "Eglise Saint Etienne", "Eglise evangélique Saint Etienne"'
+			/>
 			<Header title={title} />
-			<div className='container py-10 lg:py-20 lg:px-2 lg:max-w-5xl'>
+			<div className='container py-10 lg:py-28 lg:px-2 lg:max-w-5xl'>
 				<div className='pb-4 lg:pb-8'>
-					<BackButon urlBack="/events" />
+					<BackButon urlBack='/events' />
 				</div>
 				<div className='text-gray-900'>
 					<h2 className='font-bold text-3xl lg:text-7xl'>{title}</h2>

@@ -6,11 +6,17 @@ import SectionVerset from "../components/homePage/SectionVerset";
 import SectionVideo from "../components/homePage/SectionVideo";
 import Layout from "../components/layout/Layout";
 import { graphql } from "gatsby";
+import SEO from "../components/SEO";
 
 const IndexPage = ({ data }) => {
 	const { events, videos } = data;
 	return (
 		<Layout>
+			<SEO
+				title='Bienvenue à la maison'
+				description="Bienvenue à l'église apostolique de Saint-Etienne. Nous sommes une église chrétienne, protestante et évangélique "
+				keywords='"Serge Plais", "Eglise Saint Etienne", "Eglise evangélique Saint Etienne"'
+			/>
 			<HeaderHomePage />
 			<div className='py-10 container lg:px-2 lg:mt-20'>
 				<SectionEvent events={events} />

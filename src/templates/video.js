@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Date from "../components/date";
 import ReactPlayer from "react-player/youtube";
 import BackButon from "../components/BackButon";
+import SEO from "../components/SEO";
 
 function Video(props) {
 	const title = props.pageContext.video.titreVideo;
@@ -14,9 +15,14 @@ function Video(props) {
 	const auteurDuMessage = props.pageContext.video.auteurDuMessage;
 	return (
 		<Layout>
+			<SEO
+				title={title}
+				description={description}
+				keywords='"Serge Plais", "Eglise Saint Etienne", "Eglise evangélique Saint Etienne"'
+			/>
 			<Header title={title} />
 			<div className='container py-10 lg:py-20 lg:px-2 lg:max-w-5xl'>
-				<BackButon />
+				<BackButon urlBack="/videos" />
 				<div className=' '>
 					<div className='text-center pt-3 pb-6 lg:pt-14 lg:pb-20'>
 						<h2 className='font-bold text-3xl lg:text-7xl py-2 text-gray-900'>
