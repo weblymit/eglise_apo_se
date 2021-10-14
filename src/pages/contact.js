@@ -8,7 +8,7 @@ const Contact = () => {
 	return (
     <Layout>
       <Header title="Nous contacter" />
-			<div className='lg:py-20 lg:container'>
+			<div className='lg:py-14 container lg:max-w-2xl lg:bg-gray-200 my-16'>
 				<ContactForm />
 			</div>
 		</Layout>

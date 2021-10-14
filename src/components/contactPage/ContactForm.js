@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import * as qs from "query-string";
-import InputText from "./InputText";
 
 class ContactForm extends React.Component {
 	constructor(props) {
@@ -79,12 +78,6 @@ class ContactForm extends React.Component {
 								className='mt-2 mb-4 p-3 w-full border rounded-lg'
 								required
 							/>
-							{/* <InputText
-								type='text'
-								label='Prénom'
-								name='prenom'
-								id='first-name'
-							/> */}
 						</div>
 						{/* Nom */}
 						<div className=''>
@@ -102,7 +95,7 @@ class ContactForm extends React.Component {
 							/>
 						</div>
 						{/* Mail */}
-						<div className=''>
+						{/* <div className=''>
 							<label htmlFor='nom' className='font-bold text-gray-600'>
 								Email
 								<span className='text-red-500'>*</span>
@@ -115,25 +108,22 @@ class ContactForm extends React.Component {
 								className='mt-2 mb-4 p-3 w-full border rounded-lg'
 								required
 							/>
-						</div>
-						{/* Phone
-						<div className="">
-							<label
-								htmlFor="nom"
-								className="font-bold text-gray-600"
-							>
+						</div> */}
+						{/* Phone */}
+						<div className=''>
+							<label htmlFor='nom' className='font-bold text-gray-600'>
 								Téléphone
-								<span className="text-red-500">*</span>
+								<span className='text-red-500'>*</span>
 							</label>
 							<input
-								type="tel"
-								ref="phone"
-								name="phone"
-								id="phone"
-								className="mt-2 mb-4 p-3 w-full border rounded-lg"
+								type='tel'
+								ref='phone'
+								name='phone'
+								id='phone'
+								className='mt-2 mb-4 p-3 w-full border rounded-lg'
 								required
 							/>
-						</div> */}
+						</div>
 						<div className=''>
 							<label htmlFor='message' className='font-bold text-gray-600'>
 								Votre message <span className='text-red-500'>*</span>
@@ -143,13 +133,11 @@ class ContactForm extends React.Component {
 								name='message'
 								id='message'
 								rows='10'
-								className='mt-2 mb-4 p-3 w-full '
+								className='mt-2 mb-4 p-3 w-full border'
 								required
 							/>
 						</div>
-						{/* end div col-lg-12 for message */}
 					</div>{" "}
-					{/* end div.row */}
 					<div className='flex items-center justify-center mx-auto max-w-md text-sm'>
 						<input
 							className='form-check-input'
@@ -158,8 +146,8 @@ class ContactForm extends React.Component {
 							required
 						/>
 						<p className='ml-3 ' htmlFor='gridCheck'>
-							En soumettant ce formulaire, j’accepte que les information soit
-							enregistré par ECA afin d’être contacté.
+							En soumettant ce formulaire, j’accepte que les informations soient
+							enregistrées afin d’être contacté par EASE.
 						</p>
 					</div>
 					{this.state.feedbackMsg && (
@@ -170,7 +158,7 @@ class ContactForm extends React.Component {
 					<div id='submitBtn' className='flex justify-center'>
 						<input
 							type='submit'
-							className='p-2 w-full max-w-xs uppercase text-2xl mt-6 bg-yellow-600 text-gray-100 rounded-lg shadow-lg'
+							className='p-2 w-full max-w-xs uppercase text-2xl mt-6 bg-green-600 text-gray-100 rounded-lg shadow-lg'
 							value='Envoyer'
 						/>
 					</div>

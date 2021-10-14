@@ -5,26 +5,66 @@ import SectionGroupe from "../components/homePage/SectionGroupe";
 import SectionVerset from "../components/homePage/SectionVerset";
 import SectionVideo from "../components/homePage/SectionVideo";
 import Layout from "../components/layout/Layout";
+import { graphql } from "gatsby";
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+	const { events, videos } = data;
 	return (
 		<Layout>
 			<HeaderHomePage />
-			<div className='py-10 container lg:px-2'>
-				<SectionEvent />
+			<div className='py-10 container lg:px-2 lg:mt-20'>
+				<SectionEvent events={events} />
 			</div>
-			<div className='container'>
-				<SectionVideo />
-      </div>
-      <div className="bg-gray-100">
-        <SectionGroupe />
-      </div>
-      <div className=" py-16 lg:py-36">
-        <div className="h-1 w-20 lg:w-40 mx-auto mb-8 bg-green-500"/>
-        <SectionVerset />
-      </div>
+			<div className='container lg:px-2'>
+				<SectionVideo videos={videos} />
+			</div>
+			<div className='bg-gray-200'>
+				<SectionGroupe />
+			</div>
+			<div className=' py-16 md:py-24 lg:py-36'>
+				<div className='h-1 w-20 md:w-1/5 lg:w-40 mx-auto mb-8 bg-green-500' />
+				<SectionVerset />
+			</div>
 		</Layout>
 	);
 };
+
+export const query = graphql`
+	query PageQuery {
+		events: allGraphCmsEvenement(
+			filter: { stage: { eq: PUBLISHED } }
+			limit: 3
+			sort: { fields: dateEvenement }
+		) {
+			nodes {
+				titreEvenement
+				id
+				slug
+				dateEvenement
+				heure
+				description
+				image {
+					id
+					# gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+					imageEvenement {
+						image {
+							url
+						}
+					}
+				}
+			}
+		}
+		videos: allGraphCmsVideo(filter: { stage: { eq: PUBLISHED } }, limit: 4) {
+			nodes {
+				descriptionAuteur
+				dateVideo
+				auteurDuMessage
+				slug
+				titreVideo
+				urlVideo
+			}
+		}
+	}
+`;
 
 export default IndexPage;

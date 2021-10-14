@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
 	siteMetadata: {
 		siteUrl: "https://www.yourdomain.tld",
@@ -50,6 +52,17 @@ module.exports = {
 				path: "./src/components",
 			},
 			__key: "components",
+		},
+		{
+			resolve: "gatsby-source-graphcms",
+			options: {
+				// Your GraphCMS API endpoint. Available from your project settings.
+				endpoint:
+					process.env.GRAPHCMS_ENDPOINT ||
+					"https://api-eu-central-1.graphcms.com/v2/ckuntunvv4bp501z0es5u19jw/master",
+				// A PAT (Permanent Auth Token) for your project. Required if your project is not available publicly, or you want to scope access to a specific content stage (i.e. draft content).
+				token: process.env.GRAPHCMS_TOKEN,
+			},
 		},
 	],
 };

@@ -18,7 +18,7 @@ const Hedaer = ({ title }) => {
 				style={style}
 			>
 				<Navbar />
-				<div className='text-gray-100 px-4 md:px-0 text-center h-64 lg:h-[50vh] flex flex-col items-center justify-center lg:pb-10'>
+				<div className='text-gray-100 px-4 md:px-0 text-center h-64 md:h-[50vh] lg:h-[60vh] flex flex-col items-center justify-center lg:pb-10'>
 					<h1 className='uppercase	text-4xl md:text-6xl lg:text-8xl font-black leading-tight md:leading-snug md:max-w-6xls'>
 						{title}
 					</h1>

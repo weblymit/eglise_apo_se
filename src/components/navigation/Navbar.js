@@ -8,12 +8,12 @@ const Navbar = () => {
 	const menuLink = infoSite.menuLinks;
 
 	return (
-		<nav className={`py-5 container text-green-50s`}>
+		<nav className={`py-5 container lg:px-2`}>
 			<div className=''>
-				<ul className='flex items-center justify-between text-gray-200 '>
+				<ul className='flex items-center justify-between text-gray-200 md:pt-8'>
 					<li>
 						<Link to='/'>
-							<p className='text-4xl font-black pt-6'>EASE</p>
+							<p className='text-3xl lg:text-5xl font-black pt-6z'>EASE</p>
 							{/* <img
 									src={infoSite.logo}
 									className='w-24'
@@ -21,7 +21,7 @@ const Navbar = () => {
 								/> */}
 						</Link>
 					</li>
-					<ul className='hidden lg:flex items-center justify-between space-x-4 text-lgl uppercase font-bol'>
+					<ul className='hidden lg:flex items-center justify-between space-x-4 lg:text-xl uppercase font-bol'>
 						{menuLink?.map(({ href, label, style }) => (
 							<li key={`${href}${label}`} className={`py-2 `}>
 								<Link to={href}>{label}</Link>

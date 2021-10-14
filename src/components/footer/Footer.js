@@ -22,14 +22,14 @@ function Footer() {
 						</div>
 					</div>
 				</a>
-				<div className='flex justify-center items-center py-5 text-green-500'>
+				<div className='flex justify-center space-x-3 items-center py-5 text-green-500'>
 					{socialMedia?.map(({ href, component }) => (
 						<a href={href} key={href} target='_blank' rel='noopener noreferrer'>
 							{component}
 						</a>
 					))}
 				</div>
-				<div className='text-xs text-center'>
+				<div className='text-xs text-center text-gray-400 lg:pt-7'>
 					Copyright © {new Date().getFullYear()}{" "}
 					<span className='text-sm  py-1 '>{infoSite.title}</span>
 				</div>

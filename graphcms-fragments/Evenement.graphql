@@ -1,0 +1,41 @@
+fragment Evenement on Evenement {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  titreEvenement
+  dateEvenement
+  heure
+  description
+  slug
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  image {
+    ... on Asset {
+      remoteTypeName: __typename
+      remoteId: id
+      locale
+      stage
+    }
+  }
+}

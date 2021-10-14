@@ -1,0 +1,35 @@
+fragment InfoSite on InfoSite {
+  stage
+  remoteId: id
+  createdAt
+  updatedAt
+  publishedAt
+  adresse
+  codePostal
+  urlFacebook
+  urlYoutube
+  urlInstagram
+  mail
+  phone
+  createdBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  updatedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+  publishedBy {
+    ... on User {
+      remoteTypeName: __typename
+      remoteId: id
+      stage
+    }
+  }
+}
