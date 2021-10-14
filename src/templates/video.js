@@ -6,7 +6,6 @@ import ReactPlayer from "react-player/youtube";
 import BackButon from "../components/BackButon";
 
 function Video(props) {
-	console.log('props:', props)
 	const title = props.pageContext.video.titreVideo;
 	const description = props.pageContext.video.descriptionAuteur;
 	const urlVideo = props.pageContext.video.urlVideo;

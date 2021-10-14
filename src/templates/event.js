@@ -14,7 +14,7 @@ function Event(props) {
 			<Header title={title} />
 			<div className='container py-10 lg:py-20 lg:px-2 lg:max-w-5xl'>
 				<div className='pb-4 lg:pb-8'>
-					<BackButon />
+					<BackButon urlBack="/events" />
 				</div>
 				<div className='text-gray-900'>
 					<h2 className='font-bold text-3xl lg:text-7xl'>{title}</h2>

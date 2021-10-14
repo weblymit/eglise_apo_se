@@ -19,7 +19,7 @@ const SectionEvent = ({ events }) => {
 					/>
 				))}
 			</div>
-			<MoreList />
+			<MoreList link="/events" />
 		</div>
 	);
 };
